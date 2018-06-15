@@ -4,7 +4,6 @@ import imagecards from './imagecards.json';
 import PicCards from "./components/PicCards";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
-import Header from "./components/Header";
 import "./App.css";
 
 
@@ -90,13 +89,13 @@ class App extends React.Component {
     return (
       <div className="App">
         <Wrapper>
-          <Header>
-            <Title><h1>MEMORY GAME</h1>
-              <p className="App-intro">
-                Enhance your memory with this matching game! Click on images to earn points, but don't click on any more than once!
+
+          <Title><h1>MEMORY GAME</h1>
+            <p className="App-intro">
+              Enhance your memory with this matching game! Click on images to earn points, but don't click on any more than once!
               </p>
-            </Title>
-          </Header>
+          </Title>
+
 
           {this.state.imagecards.map(imagecards => (
             <PicCards id={imagecards.id} image={imagecards.image} >

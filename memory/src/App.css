@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   background-color: #222;
+  color: #ffffff;
 }
 
 .App-logo {
@@ -17,13 +18,12 @@
 
 .App-title {
   font-size: 1.5em;
+  color: #ffffff;
 }
 
 .App-intro {
   font-size: large;
+  color: #ffffff;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+
