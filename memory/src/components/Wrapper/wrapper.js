@@ -1,6 +1,11 @@
 import React from "react";
-import "./wrapper.css";
+import "./Wrapper.css";
 
-const Title = props => <h1 className="title">{props.children}</h1>;
+const Wrapper = props =>
+
+    <div className={`container${props.fluid ? "-fluid" : ""}`} {...props} />;
 
 export default Wrapper;
+
+
+{/* <h1 className="wrapper">{props.children}</h1> */ };

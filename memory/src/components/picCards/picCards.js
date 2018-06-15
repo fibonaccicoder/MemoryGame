@@ -1,12 +1,13 @@
 import React from "react";
-import "./picCards.css";
+import "./PicCards.css";
 
 const PicCards = props => (
-    <div onClick={() => props.setClicked(props.id)} className="card">
-        <div className="img-container">
-            <img alt={props.id} src={props.image} />
-        </div>
+    // <div onClick={(event) => props.setClicked(props.id)} className="card">
+    <div className="img-container">
+        <img alt={props.id} src={props.image} />
     </div>
+    // </div>
 );
 
 export default PicCards;
+
